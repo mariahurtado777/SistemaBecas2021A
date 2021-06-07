@@ -1,0 +1,189 @@
+*{
+    outline: 0px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Trebuchet MS"; 
+    /*text-align: center;*/
+}
+body{
+    background: url("http://localhost/EmpresaProyecto/css1/background-image/garden-logo.jpg") no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+}
+a{
+    color: #004280;
+    text-decoration: none;
+}
+.main-boxes{
+    /*top: 50%;
+    /*transition: all;
+    transition-delay: 2ms;*/
+    text-align: center;
+    background-color: #dbe2e4;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(31,31,31,1) 50%, rgba(0,0,0,1) 100%);
+    color: #dfdfdf;
+    width: 1000px;
+    position: absolute;
+    transform: none;
+    border-radius: 5px;
+    box-shadow: -10px 15px 30px -12px black;
+    display: inline-block;
+    transform: translate(-50%,10%);
+    
+}
+.main-header{
+    width: fit-content;
+    padding:20px 0px 20px 0px;
+    background-color: #004280;
+    background: linear-gradient(0deg, rgb(240, 12, 12) 0%, rgb(201, 6, 6) 100%);
+    width: 100%;
+    color: #dddddd;
+    position: relative;
+    border-radius: 5px 5px 0px 0px;
+}
+.login-box{
+    top: 50%;
+    /*transition: all;
+    transition-delay: 2ms;*/
+    background-color: #dbe2e4;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(31,31,31,1) 50%, rgba(0,0,0,1) 100%);
+    color: #dfdfdf;
+    width: 350px;
+    position: absolute;
+    transform: none;
+    border-radius: 5px;
+    box-shadow: -10px 15px 30px -12px black;
+    display: inline-block;
+    transform: translate(-50%,-50%);
+}
+.header{
+    width: fit-content;
+    padding:40px 0px 40px 0px;
+    background-color: #004280;
+    background: linear-gradient(0deg, rgb(240, 12, 12) 0%, rgb(201, 6, 6) 100%);
+    width: 100%;
+    color: #dddddd;
+    position: relative;
+    border-radius: 5px 5px 0px 0px;
+}
+.container{
+    top: 20%;
+    /*text-align: left;
+    /*left: 50%;*/
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(31,31,31,1) 50%, rgba(0,0,0,1) 100%);
+    color: #dfdfdf;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /*position: relative;
+    /* transform: translate(-50%,50%); */
+    border-radius: 0px 0px 5px 5px;
+    
+}
+.container-d{
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    width: 500px;
+}
+.fa {
+    position: absolute;
+    left: 380px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #ddd;
+}
+input[type=text], input[type=number], input[type=password]{
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid rgb(144, 144, 144);
+    font-size: large;
+    padding: 10px,30px;
+    background-color: rgba(255, 255, 255, 0.322);
+    color: #252525;
+}
+select{
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid rgb(144, 144, 144);
+    font-size: large;
+    padding: 10px,30px;
+    background-color: rgba(255, 255, 255, 0.322);
+    color: #252525;
+}
+input[type=number]{
+    width: 180px;
+    background-color: #ffffff00;
+}
+input:hover{
+    background-color: rgba(196, 169, 158, 0.657);
+}
+input[type=submit], input[type=button], input[type=reset]{
+    border-radius: 3px;
+    font-size: large;
+    background-color: rgb(128, 0, 0);
+    background: linear-gradient(0deg, rgb(209, 0, 0) 0%, rgb(201, 2, 2) 100%);
+    color: #dbdbdb;
+    margin: 4px 2px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+table{
+    margin: auto;
+    border-collapse: collapse;
+    width: 90%;
+    color: #252525;
+    
+}
+th{
+    padding: 10px;
+    background: linear-gradient(0deg, rgb(240, 12, 12) 0%, rgb(201, 6, 6) 100%);
+    color: rgb(255, 255, 255);
+    height: 40px;
+    /*border: 0px solid #ddd;*/
+    padding-top: 12px;
+    padding-bottom: 12px;
+    /*width: fit-content;*/
+}
+
+tr:nth-child(even) {
+    padding: 10px 30px;
+    
+    background-color: #bdbdbd;
+    border: 1px ;
+}
+tr:nth-child(odd) {
+   background-color: #ffffff;
+   /*width: 5px;*/
+}
+tr:hover {
+    background-color: #ddd;
+}
+td{
+    padding: 8px;
+    /*width: fit-content;*/
+}
+select{
+    text-align: left;
+}
+option{
+    text-align: center;
+}
+select{
+    text-align: center;
+}
+img{
+    max-width: 100px;
+    max-height: 65px;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    border: 7px solid #222222;
+    box-shadow: inset 0 0 2.5px 2px black;
+}::-webkit-scrollbar-thumb{
+    background: linear-gradient(0deg, rgb(240, 12, 12) 0%, rgb(201, 6, 6) 100%);
+    width: 10px;
+}
