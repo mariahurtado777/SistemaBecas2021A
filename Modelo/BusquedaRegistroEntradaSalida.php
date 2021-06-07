@@ -23,5 +23,14 @@
             $registroEntradaSalida = $cmd->fetchAll();
             return $registroEntradaSalida;
         }
+
+        public function reporteMensualEstudiante($idGestion,$idEstudiante,$fechaInicio,$fechaFin){
+            $sql = "
+
+                    ";
+
+
+
+        }//end class
     }//end class    
 ?>
