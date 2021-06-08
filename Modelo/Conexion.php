@@ -1,5 +1,5 @@
 <?php
-// Clase de conexion a la BD
+// Clase de conexion a la BD using PDO
 	class Conexion extends PDO
 	{
 		private $tipoDB = 'mysql';
